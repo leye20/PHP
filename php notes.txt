@@ -43,5 +43,9 @@ Apache
 mySQL
 PHP - programming scripting language
 
-The easiest way to output in a browser in php is jusy yo type directly.
+The easiest way to output in a browser in php is jusy yo type directly. Just typing is being served as a string!
 echo is the second easiest!
+
+METHODS
+GET method is what you use when you are repeatedly visiting a site. (this will show and can be resued).
+POST method is used when you want a more secure pass. (this should not show in your browser/ should be hidden)
