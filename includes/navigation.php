@@ -1,0 +1,12 @@
+<nav>
+    <h2>Website Navigation</h2>
+    <ul>
+    <li>
+    <a href="./index.php">Home</a>
+    </li>
+    </ul>
+</nav>
+<?php // by default, anything written in a PHP file will be sent to
+      // the browser (or whatever client made the request.) see above,
+      // we have some HTML outputting, as we did not include any PHP
+      // tags (<?php etc.) that would tell PHP otherwise.

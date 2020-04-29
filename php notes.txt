@@ -42,3 +42,6 @@ Linux
 Apache
 mySQL
 PHP - programming scripting language
+
+The easiest way to output in a browser in php is jusy yo type directly.
+echo is the second easiest!
