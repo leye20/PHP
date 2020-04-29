@@ -1,0 +1,44 @@
+
+$ php index.php
+$ php -S (the S is capital) localhost:80
+$ php -S (the S is capital) localhost:3000
+
+Below is to run a php command line without the HTML, of course this means,
+it will not show on the browser and same with the first command line above.
+
+<?php
+echo 'Hello, World!';
+
+IN php
+- echo 'Hello World'; (string) is considered a statement.
+- echo( 2 + 5 ) (integer) this is a mathematical expressions and we expect to have 7 as uotput.
+   this is still considered as a statement.
+
+Declaring a variable
+ we use a dollar sign $ followed by myVar!
+$myVar
+
+'' demonstration of a non parsed string.(you cannot parse into it)
+"" demonstration of a parsed string.(you can parse into it)
+
+Variable names cannot start with a number!
+
+TYpes of Data in php
+
+$myInteger = 54;
+$myFloat = 38.987;
+$myBoolean = TRUE; // we can use either upper case or lower case.
+$mySecondBoolean = false;
+$myString = 'Hello, World!';
+$myObject = new stdClass();
+$myNull = NULL;
+$myArray = array( $myInteger, $myFloat...) multiple values can be passed into it
+
+
+Ilustrattion of where we are.
+
+Server
+Linux
+Apache
+mySQL
+PHP - programming scripting language
