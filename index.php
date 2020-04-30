@@ -21,12 +21,12 @@
   <p>
     <?php echo $concattedString; ?>
   </p>
-  <h2>Difference Between Single and Double Quoted Strings</h2>
-  <h3>Single Quoted</h3>
+    <h2>Difference Between Single and Double Quoted Strings</h2>
+    <h3>Single Quoted</h3>
   <p>
     <?php echo $mySingleQuoteHelloString; ?>
   </p>
-  <h3>Double Quoted</h3>
+    <h3>Double Quoted</h3>
   <p>
     <?php echo $myDoubleQuoteHelloString; ?>
   </p>
