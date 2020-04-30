@@ -80,6 +80,5 @@
     <label for="Session">Session:</label>
     <?php var_dump( $_SESSION ); // shows all data types in the session ?>
   </pre>
-
 </body>
 </html>
