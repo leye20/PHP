@@ -1,9 +1,9 @@
 <?php
    
-  session_start();
+  session_start(); // BEFORE ANY OUTPUT, YOU MUST DECLARE IF YOU'D LIKE TO USE SESSION.
 
   if ( !isset( $_SESSION[ 'todos' ]))
-  { // making a default value If it DOESN'T exist.    
+  { // making a default value If it DOESN'T exist (this way we can array_push to it later!).  
     $_SESSION[ 'todos' ] = array();
   }
 
