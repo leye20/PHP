@@ -1,5 +1,8 @@
 <?php
   $myTitle = 'My First To-Do List with PHP';
+
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +13,31 @@
 <body>
   <h3><?php echo $myTitle?><h3>
 
-  <form action="" method="GET">
+  <form action="./index.php" method="GET">
     <label for="todo">Add a to-do</label><br>
     <input type="text" name="todo" id="todo">
-    <input type="submit" value="Add to List">
-    <input type="submit" value="Reset">
+    <input type="submit" value="Add Me!">
+    <input type="submit" value="Reset Me!">
   </form>
 
-  <h3>Active To-Do<h3>
+  <h3>Active To-Dos<h3>
 
-  <form action="" method="GET">
-    <input type="checkbox" name="activetodo" id="activetodo">
+  <form action="./index.php" method="GET">
+    <ul>
+      <li>
+        <input type="checkbox" name="activetodo" id="activetodo">
+      </li>
+    </ul>
   </form>
   
-  <h3><To-Dos>Completed</To-Dos><h3>
+  <To-Dos>Completed To-Dos</To-Dos>
 
-  <form action="" method="GET">
-    <input type="list" name="completetodo" id="completetodo">
+  <form action="./index.php" method="GET">
+    <ul>
+      <li>
+        <list type="list" name="completetodo" id="completetodo">
+      </li>
+    </ul>
   </form>
 </body>
 </html>
