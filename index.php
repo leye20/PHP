@@ -19,6 +19,12 @@
     array_push( $_SESSION[ 'todos'], $_GET[ 'todo'] );
   }
 
+  if ( isset( $_GET['reset'])) 
+  {
+    $_SESSION['todos'] = array();
+    session_destroy();
+  }
+
   $myMessage = 'Thank you for checking in, add your To-Do, we got you covered!';
   $myTitle = 'My First To-Do List with PHP';
 
@@ -40,10 +46,10 @@
   </form>
   
   <form>
-  <?php if ( !empty( $_SESSION['todos'] ) ) : ?>
+  <?php if ( !empty( $_SESSION['todos'] ) ) : // Check if there are todos. ?>
     <h3>Active To-Dos<h3>
     <ul>
-      <?php foreach ( $_SESSION['todos'] as $todo ) :  ?>
+      <?php foreach ( $_SESSION['todos'] as $todo ) : // output each interest in the array ?>
         <li>
           <input type="checkbox" name="activetodo" id="activetodo">
           <?php echo $todo; ?>
@@ -63,5 +69,17 @@
     </ul>
   </form> -->
   
+  <h3>Debugging</h3>
+  <pre>
+    <strong>$_GET contents:</strong>
+    <label for="GET">GET:</label>
+    <?php var_dump( $_GET ); // shows all data types in the GET  ?>
+  </pre>
+  <pre>
+    <strong>$_SESSION contents:</strong>
+    <label for="Session">Session:</label>
+    <?php var_dump( $_SESSION ); // shows all data types in the session ?>
+  </pre>
+
 </body>
 </html>
