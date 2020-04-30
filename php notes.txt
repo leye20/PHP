@@ -74,3 +74,12 @@ Methods
 - ob_get_clean(); ob_get - gets the date declared in ob_start, clean then clears the output buffer created in ob_start
 - NO output yet at this point!
 - 
+
+- when running our method, we do not need to write echo as out uotput is already running an echo.
+
+- when starting a json file, you open p with a {}
+- trying to accessing the data in json and using it as an output.
+
+- dirname( __FILE__ ) . '/
+- dirname gets the name of the path
+- (__FILE__) magic fxn that searches and returns the path to get our current directory.
