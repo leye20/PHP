@@ -23,6 +23,8 @@ $myVar
 
 Variable names cannot start with a number!
 
+everything within a php tag is a string!
+
 TYpes of Data in php
 
 $myInteger = 54;
@@ -49,3 +51,26 @@ echo is the second easiest!
 METHODS
 GET method is what you use when you are repeatedly visiting a site. (this will show and can be resued).
 POST method is used when you want a more secure pass. (this should not show in your browser/ should be hidden)
+
+Arrays
+- for indexed arrays. to add an array you woud declare and empty array per below
+$myIndexedArray[] = 'Lizard'; it then knows to put the array in the array at the end.
+
+Class
+- public allows us to add an array
+- private prevents manipulation.
+both instances should be declared on the propertoes and ot the class.
+
+the key word NEW is used when you are making an objet from a class or just making an object!
+
+Methods
+- in methods we start with a construct.
+- construct is a reserved key wrod.
+- function __construct (the underscore is double) ( $name = '', $price = 0.00, $type = 'Uncategorized' )
+- above is default value!
+- $this->name is used to access properties from a class
+- ob_start(); holds off data to pending publication.
+- everthing between php tags will be echoed!
+- ob_get_clean(); ob_get - gets the date declared in ob_start, clean then clears the output buffer created in ob_start
+- NO output yet at this point!
+- 

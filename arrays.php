@@ -40,6 +40,7 @@
 </head>
 <body>
   <h1>PHP Arrays</h1>
+  <?php include './includes/navigation.php'; ?>
   <h2>Indexed Array</h2>
   <ul>
     <?php foreach ( $myIndexedArray as $animal ) : ?>
