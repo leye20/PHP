@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+// error debugger!
+ini_set( 'display_errors', 1 );
+  ini_set( 'display_startup_errors', 1 );
+  error_reporting( E_ALL );
+  include './includes/blogs.class.php';
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +15,8 @@
     <h1>PHP Blog Posts</h1>
     <?php
         $articles = new Article( dirname( __FILE__) . './data/blog.json' );
-
-        $snacks->output();
+        
+        $articles->output();
     ?>
 </body>
 </html>
