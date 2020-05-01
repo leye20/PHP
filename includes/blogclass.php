@@ -17,6 +17,22 @@ class Article {
         }
     }
 
+    public function output ()
+    {
+        if ( is_array( $this->allArticles ) && !empty( $this->allarticles ) )
+        {
+            echo '<h2>Itemized Articles</h2><ul>';
+            foreach ( $this->allArticles as $article )
+            {
+                foreach ( $this->article as $id )
+                {
+                    $newArticle = new Article ( $article->title, $article->content );
+                    echo '<li>' .$newArticle->output( FALSE ). '</li>';
+                }
+                echo '</ul>';
+            }
+        }
+    }
 }
 
 ?>

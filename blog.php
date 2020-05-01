@@ -11,7 +11,6 @@
         $articles = new Article( dirname( __FILE__) . './data/blog.json' );
 
         $snacks->output();
-        var_dump ( $articles );
     ?>
 </body>
 </html>
