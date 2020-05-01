@@ -83,3 +83,16 @@ Methods
 - dirname( __FILE__ ) . '/
 - dirname gets the name of the path
 - (__FILE__) magic fxn that searches and returns the path to get our current directory.
+
+php functions we can check again!
+- json_decode gets a data and turns it into an array.
+- json_encode changes the data into a 
+
+<?php
+   $people = array():
+   $myFile = './example.json';
+   $myContent = file_decode($myFile);
+   $myArray = json_decode($myContent, true);
+   $people = $myArray ['users']
+
+a double for loop helps us get the value in a value of an array
