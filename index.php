@@ -17,15 +17,15 @@ $randomTrivia = $randomTriviaObject->results[0]
     <h1>Random Trivia Question</h1>
     <h2>Random Trivia Question</h2>
     <dl>
-        <dt>Category</dt>
+        <dt>Category:</dt>
         <dd>
             <?php echo $randomTrivia->category; ?>
         </dd>
-        <dt>Difficulty</dt>
+        <dt>Difficulty:</dt>
         <dd>
             <?php echo $randomTrivia->difficulty; ?>
         </dd>
-        <dt>Question</dt>
+        <dt>Question:</dt>
         <dd>
             <?php echo $randomTrivia->question; ?>
         </dd>
